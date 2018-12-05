@@ -6,6 +6,8 @@ spring:
     url: jdbc:mysql://10.103.20.19/sell?characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8&useSSL=false
   jpa:
     show-sql: true
+  jackson:
+    default-property-inclusion: non_null
 
 server:
   servlet:

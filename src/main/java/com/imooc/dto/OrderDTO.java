@@ -1,7 +1,9 @@
 package com.imooc.dto;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.imooc.model.OrderDetail;
+import com.imooc.utils.serializer.Date2LongSerializer;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -9,6 +11,8 @@ import java.util.Date;
 import java.util.List;
 
 @Data
+@JsonInclude(value = JsonInclude.Include.NON_NULL)
+//@JsonSerialize(include=Jso nSerialize.Inclusion.NON_NULL)
 public class OrderDTO {
     /** 订单id. */
     private String orderId;
@@ -35,11 +39,11 @@ public class OrderDTO {
     private Integer payStatus;
 
     /** 创建时间. */
-//    @JsonSerialize(using = Date2LongSerializer.class)
+    @JsonSerialize(using = Date2LongSerializer.class)
     private Date createTime;
 
     /** 更新时间. */
-//    @JsonSerialize(using = Date2LongSerializer.class)
+    @JsonSerialize(using = Date2LongSerializer.class)
     private Date updateTime;
 
     List<OrderDetail> orderDetailList;
