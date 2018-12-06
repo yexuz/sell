@@ -14,3 +14,20 @@ server:
     context-path: /sell
   port: 9999
 
+
+wechat:
+  mpAppId: wx2375c2f37484eb0f
+  mpAppSecret: 4e237c4dbc941510fd8c14c847851f08
+#  openAppId: wx6ad144e54af67d87
+#  openAppSecret: 91a2ff6d38a2bbccfb7e9f9079108e2e
+  mchId: 1483469312
+  mchKey: 06C56A89949D617xxxxxxxxxxx
+  keyPath: /var/weixin_cert/h5.p12
+  notifyUrl: http://sv3wc6.natappfree.cc/sell/pay/notify
+#  templateId:
+#    orderStatus: e-Cqq67QxD6YNI41iRiqawEYdFavW_7pc7LyEMb-yeQ
+
+#projectUrl:
+#  wechatMpAuthorize: http://sv3wc6.natappfree.cc
+#  wechatOpenAuthorize: http://sv3wc6.natappfree.cc
+#  sell: http://sv3wc6.natappfree.cc
