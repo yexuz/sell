@@ -78,6 +78,10 @@ public class PayServiceImpl implements PayService {
         return payResponse;
     }
 
+    /**
+     * 退款
+     * @param orderDTO
+     */
     @Override
     public RefundResponse refund(OrderDTO orderDTO) {
         RefundRequest refundRequest = new RefundRequest();

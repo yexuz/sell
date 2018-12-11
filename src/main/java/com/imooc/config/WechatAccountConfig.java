@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 import java.util.Map;
 
 @Data
-@Configuration
+@Component
 @ConfigurationProperties(prefix = "wechat")
 public class WechatAccountConfig {
 
@@ -22,16 +22,16 @@ public class WechatAccountConfig {
      */
     private String mpAppSecret;
 
-//    /**
-//     * 开放平台id
-//     */
-//    private String openAppId;
-//
-//    /**
-//     * 开放平台密钥
-//     */
-//    private String openAppSecret;
-//
+    /**
+     * 开放平台id
+     */
+    private String openAppId;
+
+    /**
+     * 开放平台密钥
+     */
+    private String openAppSecret;
+
     /**
      * 商户号
      */
@@ -51,9 +51,10 @@ public class WechatAccountConfig {
      * 微信支付异步通知地址
      */
     private String notifyUrl;
-//
-//    /**
-//     * 微信模版id
-//     */
-//    private Map<String, String> templateId;
+
+    /**
+     * 微信模版id
+     */
+    private Map<String, String> templateId;
 }
+
